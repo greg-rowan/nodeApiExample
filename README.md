@@ -11,5 +11,4 @@ This will start 2 docker containers
 1. SQL Server database with sample database named Products. 
 2. NodeJs Express API which has standard controllers/routes. 
 
-
-
+![screenshot](/images/db_screenshot.png)
