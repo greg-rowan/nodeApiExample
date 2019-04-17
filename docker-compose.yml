@@ -1,0 +1,33 @@
+version: '3.3'
+services:
+  web:
+    build:
+      context: ./demoApi/
+      dockerfile: Dockerfile
+    ports:
+      - "1337:8080"
+    networks:
+      mynetwork:
+        aliases:
+          - web1
+          # web1.internal.prod.example.com
+        
+  db:
+    build:
+      context: ./docker/db/
+      dockerfile: Dockerfile
+    ports:
+      - "1433:1433"
+    environment:
+      SA_PASSWORD: "Alaska2017"
+      ACCEPT_EULA: "Y"
+    healthcheck:
+      test: sqlcmd -S db1 -U SA -P 'Alaska2017' -Q 'select distinct 1 from TESTDB.dbo.PRODUCTS'
+    networks:
+      mynetwork:
+        aliases:
+          - db1
+          # db1.internal.prod.example.com
+networks:
+  mynetwork:
+    driver: bridge
