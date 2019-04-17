@@ -1,5 +1,5 @@
 # nodeApiExample
-Working example of "dockerized" Node Express CRUD API which connects to MSSQL. 
+Working example of dockerized Node Express CRUD API which connects to MSSQL. 
 
 ## Instructions
 On Mac, clone repo and run following docker command
