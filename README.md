@@ -16,4 +16,4 @@ This will start 2 docker containers
 ![screenshot](/images/db_screenshot.png)
 
 ### API
-!(/images/api_screenshot.png)
+(/images/api_screenshot.png)
