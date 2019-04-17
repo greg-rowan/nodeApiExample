@@ -1,8 +1,8 @@
-FROM microsoft/mssql-server-linux:latest
+FROM microsoft/mssql-server-linux
 
 RUN apt-get update && apt-get install -y  \
-	curl \
-	apt-transport-https
+  curl \
+  apt-transport-https
 
 # https://docs.microsoft.com/en-us/sql/connect/odbc/linux/installing-the-microsoft-odbc-driver-for-sql-server-on-linux
 RUN curl https://packages.microsoft.com/keys/microsoft.asc | apt-key add -
