@@ -1,5 +1,5 @@
 # nodeApiExample
-Working example of dockerized Node Express CRUD API which connects to MSSQL. 
+Working example of dockerized Node Express CRUD API which connects up to MSSQL. 
 
 ## Purpose
 To create nodeJs based REST API which can connect to SQL Server and return data. 
